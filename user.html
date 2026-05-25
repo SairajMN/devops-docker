@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>user page</title>
+</head>
+
+<body>
+    <h1>User Page</h1>
+    <p>This is a simple user page.</p>
+    <form>
+        <input type="text" name="username" placeholder="Enter your username">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            var username = form.elements['username'].value;
+            alert('Hello, ' + username + '!');
+        });
+    </script>
+</body>
+
+</html>
